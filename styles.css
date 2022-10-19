@@ -152,7 +152,6 @@ footer {
     margin: 0;
     display: flex;
     justify-content: space-between;
-
 }
 
 footer ul {
@@ -171,16 +170,12 @@ footer ul li {
     white-space: nowrap;
 }
 
-footer ul li i {
-    text-transform: uppercase;
-}
-
 footer ul li a {
     text-decoration: none;
     color: #1b1b1b;
 }
 
-@media screen and (max-device-width: 800px) {
+@media screen and (max-device-width: 630px) {
     header h1 {
         font-size: 4em;
     }
@@ -219,6 +214,10 @@ footer ul li a {
         overflow-y: auto;
     }
 
+    footer ul li span {
+        margin-left: 16px;
+    }
+
     footer {
         flex-direction: column;
     }
@@ -229,6 +228,14 @@ footer ul li a {
 
     footer ul li {
         white-space: normal;
+    }
+
+    .reg {
+        min-height: 100vh;
+    }
+
+    .reg form {
+        scale: 2.1;
     }
 }
 
@@ -430,14 +437,16 @@ footer ul li a {
     height: 30px;
     width: 80%;
 }
-textarea{
-    overflow: auto;
+
+textarea {
     resize: none;
 }
+
 .contact-us-content form input[type=submit] {
     cursor: pointer;
     background-color: rgba(255, 135, 49, 0.91);
 }
+
 .contact-us-content form input[type=submit]:hover {
     cursor: pointer;
     background-color: rgb(255, 115, 0);
@@ -448,6 +457,7 @@ textarea{
     justify-content: center;
     flex: 1 1 auto;
 }
+
 .students table {
     border-collapse: collapse;
     margin: 5%;
@@ -455,6 +465,14 @@ textarea{
     overflow-x: scroll;
 }
 
-.students table tr:nth-child(2n){
+.students table tr:nth-child(2n) {
     background-color: rgba(8, 182, 124, 0.13);
+}
+
+.reg select {
+    width: 168px;
+    height: 28px;
+    /*text-align: center;*/
+    border-radius: 5px;
+    border: 1px solid;
 }
