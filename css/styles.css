@@ -231,11 +231,11 @@ footer ul li a {
     }
 
     .reg {
-        min-height: 100vh;
+        min-height: 120vw;
     }
 
     .reg form {
-        scale: 2.1;
+        /*scale: 1.6;*/
     }
 }
 
@@ -320,7 +320,7 @@ footer ul li a {
 
 
 .reg form {
-    background-color: rgba(252, 194, 148, 0.91);
+    background-color: rgba(252, 194, 148, 0.43);
     border: 1px solid rgba(33, 100, 119, 0.58);
     box-shadow: 0 0 5px 1px rgba(117, 68, 30, 0.71);
     display: flex;
@@ -332,7 +332,45 @@ footer ul li a {
 }
 
 .reg form label {
-    padding: 2%;
+    padding: 4% 2% 0 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reg table {
+    border: 1px solid #1b1b1b;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 20px;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.reg table tr:nth-child(2n) {
+    background-color: rgba(252, 194, 148, 0.22);
+}
+
+.reg table thead tr {
+    text-align: left;
+}
+
+.reg table th,
+.reg table td {
+    padding: 12px 15px;
+}
+
+.gender {
+    display: flex;
+    flex-direction: row;
+}
+
+.reg form .label-gender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .reg form input {
@@ -348,9 +386,30 @@ footer ul li a {
     border: 1px solid;
 }
 
+.error-message {
+    display: flex;
+    justify-content: left;
+    font-size: 0.8rem;
+    color: #ff0000;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
 .reg form input[type=submit] {
     border: none;
-    background-color: rgb(255, 176, 113);
+    background-color: rgba(255, 176, 113, 0.51);
+    margin-top: 7%;
+    border-radius: 0.6em;
+    font-size: 1em;
+}
+
+.reg form input[type=button] {
+    border: none;
+    background-color: rgba(255, 176, 113, 0.51);
     margin-top: 7%;
     border-radius: 0.6em;
     font-size: 1em;
@@ -362,6 +421,13 @@ footer ul li a {
 
 .reg a:visited {
     color: #0000EE;
+}
+
+.reg select {
+    width: 168px;
+    height: 28px;
+    border-radius: 5px;
+    border: 1px solid;
 }
 
 .news-grid {
@@ -467,12 +533,4 @@ textarea {
 
 .students table tr:nth-child(2n) {
     background-color: rgba(8, 182, 124, 0.13);
-}
-
-.reg select {
-    width: 168px;
-    height: 28px;
-    /*text-align: center;*/
-    border-radius: 5px;
-    border: 1px solid;
 }
